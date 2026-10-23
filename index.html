@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kasey Rhee</title>
+<meta name="description" content="Kasey Rhee, Ph.D. candidate in Political Science at Stanford University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f8f7f4;
+    --text: #1f2328;
+    --muted: #5f6670;
+    --rule: #dcdad3;
+    --accent: #00693e; /* Dartmouth green */
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171c;
+      --text: #e4e6ea;
+      --muted: #9aa1ab;
+      --rule: #2e333b;
+      --accent: #6cc49a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 'Inter', system-ui, sans-serif;
+  }
+  main { max-width: 1040px; margin: 0 auto; padding: 56px 16px 80px; }
+  h1, h2 { font-family: 'EB Garamond', Georgia, serif; font-weight: 500; }
+  h1 { font-size: 2.6rem; margin: 0 0 4px; }
+  h2 {
+    font-size: 1.6rem;
+    margin: 48px 0 16px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--rule);
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .subtitle { color: var(--muted); margin: 0 0 16px; }
+  .links { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 0.95rem; }
+  .header { display: flex; gap: 28px; align-items: center; }
+  .header img { width: 140px; height: 140px; object-fit: cover; object-position: center 30%; border-radius: 50%; flex-shrink: 0; }
+  .paper { margin: 0 0 26px; }
+  .paper-title { font-family: 'EB Garamond', Georgia, serif; font-size: 1.2rem; font-weight: 600; }
+  .paper-meta { color: var(--muted); font-size: 0.92rem; }
+  details { margin-top: 4px; font-size: 0.92rem; }
+  summary { cursor: pointer; color: var(--accent); width: fit-content; }
+  details p { margin: 8px 0 0; }
+  footer { margin-top: 64px; color: var(--muted); font-size: 0.85rem; }
+  @media (max-width: 560px) {
+    .header { flex-direction: column; align-items: flex-start; gap: 16px; }
+    .header img { width: 110px; height: 110px; }
+    h1 { font-size: 2.2rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <div class="header">
+    <img src="headshot.jpg" alt="Kasey Rhee">
+    <div>
+      <h1>Kasey Rhee</h1>
+      <p class="subtitle">Ph.D. Candidate in Political Science, Stanford University</p>
+      <div class="links">
+        <a href="cv.pdf">CV</a>
+        <a href="mailto:kjrhee@stanford.edu">Email</a>
+        <a href="https://github.com/kaseyrhee">GitHub</a>
+        <!-- <a href="https://scholar.google.com/...">Google Scholar</a> -->
+      </div>
+    </div>
+  </div>
+
+  <p>
+    I am a Ph.D. candidate in Political Science at Stanford University. My research studies American
+    elections and political behavior using large-scale administrative datasets and causal inference
+    techniques. Specifically, I study how personal life, such as family disagreements about politics, marriage,
+    and divorce, shapes partisanship and participation. I also study U.S. election
+    administration, including how voter registration, ballot access, and list-maintenance policies influence
+    participation and electoral outcomes. In a separate line of work, I use computer vision and text analysis
+    to study how candidates present themselves visually in campaign advertising.
+  </p>
+  <p>I am on the academic job market in 2026&ndash;27.</p>
+
+  <h2>Publications</h2>
+
+  <div class="paper">
+    <div class="paper-title">Polarized Parents, Polarized Kids: Updating the Literature on Partisan Socialization in Adolescence</div>
+    <div class="paper-meta">with <a href="https://politicalscience.stanford.edu/people/shanto-iyengar">Shanto Iyengar</a> &middot; In Z. Oxley &amp; J. Greenlee (eds.), De Gruyter Handbook of Political Socialization (forthcoming)</div>
+  </div>
+
+  <div class="paper">
+    <div class="paper-title">Decider in Chief? Why and How the Public Exaggerates the Power of the Presidency</div>
+    <div class="paper-meta">with S. Clifford, D.J. Flynn, and Brendan Nyhan &middot; Political Research Quarterly (2023)</div>
+  </div>
+
+  <div class="paper">
+    <div class="paper-title">Perceived Motives of Public Diplomacy Influence Foreign Public Opinion</div>
+    <div class="paper-meta">with Charles Crabtree and <a href="https://horiuchi.org/">Yusaku Horiuchi</a> &middot; Political Behavior 46: 683&ndash;703 (2023)</div>
+  </div>
+
+  <div class="paper">
+    <div class="paper-title">National Identity Predicts Public Health Support During a Global Pandemic</div>
+    <div class="paper-meta">with J.J. Van Bavel, A. Cichocka, and others &middot; Nature Communications 13: 517 (2022)</div>
+  </div>
+
+  <h2>Working Papers</h2>
+
+  <!-- Copy one .paper block per paper. To link a PDF, wrap the title: <a href="papers/file.pdf">Title</a>.
+       To add an abstract, put this inside the .paper block:
+       <details><summary>Abstract</summary><p>...</p></details> -->
+
+  <div class="paper">
+    <div class="paper-title">How Divorce Affects Political Participation</div>
+    <div class="paper-meta">with <a href="https://www.rachellienesch.com/">Rachel Lienesch</a> and <a href="https://politicalscience.stanford.edu/people/shanto-iyengar">Shanto Iyengar</a></div>
+  </div>
+
+  <div class="paper">
+    <div class="paper-title">How Women and Black Candidates Present Themselves in Television Advertising</div>
+  </div>
+
+  <div class="paper">
+    <div class="paper-title">Measuring the Nationalization of American Elections Through Advertising Content</div>
+    <div class="paper-meta">with <a href="https://politicalscience.stanford.edu/people/shanto-iyengar">Shanto Iyengar</a></div>
+  </div>
+
+  <div class="paper">
+    <div class="paper-title">Shifts in Candidate Support During Ballot Counting Do Not Indicate Fraud</div>
+    <div class="paper-meta">with <a href="https://politicalscience.stanford.edu/people/justin-grimmer">Justin Grimmer</a></div>
+  </div>
+
+  <div class="paper">
+    <div class="paper-title">Sorting and Conversion in American Marriages, 2012&ndash;2022</div>
+  </div>
+
+  <div class="paper">
+    <div class="paper-title">Switching to Vote: Primary Rules, Party Raiding, and Instrumental Partisanship on the Voter Rolls</div>
+  </div>
+
+  <div class="paper">
+    <div class="paper-title">The Electoral Consequences of Ideological Persuasion: Evidence from a Within-Precinct Analysis of U.S. Elections</div>
+    <div class="paper-meta">with A. Bonica and <a href="https://nicolasstuden.com/">Nicolas Studen</a></div>
+  </div>
+
+  <div class="paper">
+    <div class="paper-title">The Power of Vague Conspiracy Theories: Why Expansive Voter Fraud Theories Spread, Are Difficult to Refute, and Create Cycles of Distrust</div>
+    <div class="paper-meta">with <a href="https://politicalscience.stanford.edu/people/justin-grimmer">Justin Grimmer</a>, J.S. Mernyk, T.R. Saenger, and <a href="https://brandonstewart.org/">B.M. Stewart</a></div>
+  </div>
+
+  <div class="paper">
+    <div class="paper-title">Who Is Removed from Voter Registration Lists?</div>
+    <div class="paper-meta">with <a href="https://politicalscience.stanford.edu/people/justin-grimmer">Justin Grimmer</a> and <a href="https://www.andrewcwmyers.com/">Andrew Myers</a></div>
+  </div>
+
+  <div class="paper">
+    <div class="paper-title">Who Votes by Mail? Racial Selection and Demographic Sorting in American Mail-in Voting</div>
+  </div>
+
+  <h2>Teaching</h2>
+
+  <p class="paper-meta">Teaching Assistant, Stanford University</p>
+
+  <div class="paper">
+    <div class="paper-title">The Science of Politics (POLISCI 1)</div>
+    <div class="paper-meta">Summer 2025</div>
+  </div>
+
+  <div class="paper">
+    <div class="paper-title">Campaigns, Voting, Media (POLISCI 120B)</div>
+    <div class="paper-meta">Winter 2024</div>
+  </div>
+
+  <div class="paper">
+    <div class="paper-title">Data Science for Politics (POLISCI 150A)</div>
+    <div class="paper-meta">Autumn 2023</div>
+  </div>
+
+  <div class="paper">
+    <div class="paper-title">Introduction to American Politics (POLISCI 102)</div>
+    <div class="paper-meta">Spring 2023</div>
+  </div>
+
+  <h2>Contact</h2>
+  <p>
+    Department of Political Science, Stanford University<br>
+    <a href="mailto:kjrhee@stanford.edu">kjrhee@stanford.edu</a>
+  </p>
+
+  <footer>Last updated October 2026</footer>
+</main>
+</body>
+</html>
